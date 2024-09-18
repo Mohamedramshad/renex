@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg-blue-500 shadow-lg text-white">
+        <div class="container mx-auto flex justify-between items-center py-4">
+            <!-- Logo -->
+            <!-- <div class="text-3xl font-bold text-white ">re-Nex</div> -->
+             <img src="./image/Logo in white text SVG (1).svg" alt="" class="w-[4%]">
+            <!-- Navigation Menu -->
+            <nav class="hidden md:flex space-x-8 ">
+                <a href="#" class="text-gray-700 hover:text-gray-900 text-white">For Buyers</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900 text-white">For Tenants</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900 text-white">For Owners</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900 text-white">For Dealers/Builders</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900 text-white">Insights</a>
+            </nav>
+            <!-- Post Property Button -->
+           <a href="superlisting.html"> <button class="bg-green-500 text-white px-4 py-2 rounded-lg">Post Property</button></a>
+            <!-- Profile Section -->
+            <div class="flex items-center space-x-4">
+                <div class="rounded-full bg-white w-8 h-8 text-center text-blue-500">R</div>
+                <button class="text-white">Menu</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-64 relative" style="background-image: url('55.png');">
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div class="container mx-auto relative z-10 h-full flex items-center">
+          <!-- <div class="text-white text-4xl font-bold">#KabTakPuchoge</div> -->
+      </div>
+    </section>
+  
+  
+
+    <!-- Search and Filters Section -->
+    <section class="container mx-auto mt-6 bg-white rounded-lg shadow-lg p-4">
+        <div class="flex space-x-4">
+          <div class="flex-1">
+            <ul class="flex space-x-4">
+              <li class="font-bold text-blue-600 border-b-2 border-blue-600 pb-2 hover:border-blue-600 hover:text-blue-600 transition-colors">Buy</li>
+              <li class="text-gray-500 border-b-2 border-transparent pb-2 hover:border-blue-600 hover:text-blue-600 transition-colors">Rent</li>
+              <li class="text-gray-500 border-b-2 border-transparent pb-2 hover:border-blue-600 hover:text-blue-600 transition-colors">New Launch</li>
+              <li class="text-gray-500 border-b-2 border-transparent pb-2 hover:border-blue-600 hover:text-blue-600 transition-colors">PG / Co-living</li>
+              <li class="text-gray-500 border-b-2 border-transparent pb-2 hover:border-blue-600 hover:text-blue-600 transition-colors">Commercial</li>
+              <li class="text-gray-500 border-b-2 border-transparent pb-2 hover:border-blue-600 hover:text-blue-600 transition-colors">Plots/Land</li>
+              <li class="text-gray-500 border-b-2 border-transparent pb-2 hover:border-blue-600 hover:text-blue-600 transition-colors">Projects</li>
+            </ul>
+          </div>
+          
+            <!-- Search Bar -->
+            <div class="flex-1 relative">
+                <input type="text" class="w-full border rounded-lg p-2 pl-8" placeholder="Search 'Hyderabad'">
+                <svg class="absolute top-2 left-2 w-6 h-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16l4-4-4-4m8 4H8"/>
+                </svg>
+            </div>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded-lg">Search</button>
+        </div>
+    </section>
+
+    <!-- Continue Browsing Section -->
+    <section class="container mx-auto mt-6">
+        <div class="flex space-x-4 overflow-auto pb-4">
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-full">Buy in Central Delhi</button>
+            <button class="bg-blue-100 text-blue-500 px-4 py-2 rounded-full">Rent in Kochi</button>
+            <button class="bg-blue-100 text-blue-500 px-4 py-2 rounded-full">Buy in Malappuram</button>
+            <button class="bg-blue-100 text-blue-500 px-4 py-2 rounded-full">Rent in Kerala</button>
+            <button class="bg-blue-100 text-blue-500 px-4 py-2 rounded-full">Rent in Hyderabad</button>
+        </div>
+    </section>
+    <section>
+      <div class="wrapper">
+        <div class="flex justify-between flex-wrap mb-[5%]">
+          <!-- First flex item -->
+          <div class="flex bg-blue-100 w-[22%] py-[2%] px-[4%] rounded-full hover:bg-blue-200 transition-colors">
+            <div>
+              <i class="fas fa-building text-blue-500 text-2xl"></i>
+            </div>
+            <div class="ml-2">
+              <h1>Residential</h1>
+              <h2>Apartments</h2>
+            </div>
+          </div>
+          
+          <!-- Second flex item -->
+          <div class="flex bg-blue-100 w-[22%] py-[2%] px-[4%] rounded-full hover:bg-blue-200 transition-colors">
+            <div>
+              <i class="fas fa-home text-blue-500 text-2xl"></i>
+            </div>
+            <div class="ml-2">
+              <h1>Independent</h1>
+              <h2>House/Villa</h2>
+            </div>
+          </div>
+      
+          <!-- Third flex item -->
+          <div class="flex bg-blue-100 w-[22%] py-[2%] px-[4%] rounded-full hover:bg-blue-200 transition-colors">
+            <div>
+              <i class="fas fa-building text-blue-500 text-2xl"></i>
+            </div>
+            <div class="ml-2">
+              <h1>Independent</h1>
+              <h2>Builder Floor</h2>
+            </div>
+          </div>
+      
+          <!-- Fourth flex item (new div) -->
+          <div class="flex bg-blue-100 w-[22%] py-[2%] px-[4%] rounded-full hover:bg-blue-200 transition-colors">
+            <div>
+              <i class="fas fa-building text-blue-500 text-2xl"></i>
+            </div>
+            <div class="ml-2">
+              <h1>1 RK/ Studio</h1>
+              <h2>Apartment</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-white py-8 ">
+      <h2 class="text-center text-gray-500 font-semibold mb-4">
+        GET STARTED WITH EXPLORING REAL ESTATE OPTIONS
+      </h2>
+      <div class="flex overflow-x-auto space-x-4 px-4">
+        <!-- Card 1: Buying a home -->
+        <div class="min-w-[150px] sm:min-w-[200px] lg:min-w-[250px]">
+          <div class="bg-white rounded-lg shadow-lg">
+            <img src="./image/home.webp" alt="Buying a home" class="w-full h-40 object-cover rounded-t-lg">
+            <div class="p-4">
+              <p class="text-center text-blue-900 font-semibold">Buying a home</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 2: Renting a home -->
+        <div class="min-w-[150px] sm:min-w-[200px] lg:min-w-[250px]">
+          <div class="bg-white rounded-lg shadow-lg">
+            <img src="./image/rentinghome.webp" alt="Renting a home" class="w-full h-40 object-cover rounded-t-lg">
+            <div class="p-4">
+              <p class="text-center text-blue-900 font-semibold">Renting a home</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 3: Invest in Real Estate -->
+        <div class="min-w-[150px] sm:min-w-[200px] lg:min-w-[250px]">
+          <div class="bg-white rounded-lg shadow-lg relative">
+            <img src="./image/investrealestate.png" alt="Invest in Real Estate" class="w-full h-40 object-cover rounded-t-lg">
+            <div class="p-4">
+              <p class="text-center text-blue-900 font-semibold">Invest in Real Estate</p>
+            </div>
+            <span class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full">NEW</span>
+          </div>
+        </div>
+    
+        <!-- Card 4: Sell/Rent your property -->
+        <div class="min-w-[150px] sm:min-w-[200px] lg:min-w-[250px]">
+          <div class="bg-white rounded-lg shadow-lg">
+            <img src="./image/sell.or.rent.webp" alt="Sell/Rent your property" class="w-full h-40 object-cover rounded-t-lg">
+            <div class="p-4">
+              <p class="text-center text-blue-900 font-semibold">Sell/Rent your property</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 5: Plots/Land -->
+        <div class="min-w-[150px] sm:min-w-[200px] lg:min-w-[250px]">
+          <div class="bg-white rounded-lg shadow-lg">
+            <img src="./image/plot.land.webp" alt="Plots/Land" class="w-full h-40 object-cover rounded-t-lg">
+            <div class="p-4">
+              <p class="text-center text-blue-900 font-semibold">Plots/Land</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 6: Explore Insights -->
+        <div class="min-w-[150px] sm:min-w-[200px] lg:min-w-[250px]">
+          <div class="bg-white rounded-lg shadow-lg relative">
+            <img src="./image/commercial.webp" alt="Explore Insights" class="w-full h-40 object-cover rounded-t-lg">
+            <div class="p-4">
+              <p class="text-center text-blue-900 font-semibold">Buying Commercial spaces</p>
+            </div>
+            <span class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full">NEW</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="wrapper justify-between  mt-[5%]">
+            <h5 class="text-center">Three steps. Three minutes</h5>
+            <h1 class="  text-center text-[40px] font-bold m-auto ">Everything should be this easy.</h1>
+            <div class="grid grid-cols-1 gap-20 sm:grid-cols-2 lg:grid-cols-3 mt-[30px]">
+                
+                <div class="text-center" >
+                    <img src="./image/messages.png" alt=""  class="mx-auto">
+                    <h3 class="font-semibold mt-3 mb-3">Answer questions</h3>
+                    <p class=" ">Lorem ipsum dolor sit amet consectetur. Adipiscing imperdiet bibendum in in vestibulum. </p>
+                </div>
+                    
+                
+    
+                <div class="text-center">
+                    <img src="./image/sms-tracking.png" alt="" class="mx-auto">
+                    <h3 class="font-semibold mt-3 mb-3">Select a quote</h3>
+                    <p class=" ">Lorem ipsum dolor sit amet consectetur. Adipiscing imperdiet bibendum in in vestibulum. </p>
+                </div>
+    
+                <div class="text-center">
+                    <img src="./image/edit-2.png" alt="" class="mx-auto">
+                    <h3 class="font-semibold mt-3 mb-3">Answer questions</h3>
+                    <p class=" ">Lorem ipsum dolor sit amet consectetur. Adipiscing imperdiet bibendum in in vestibulum. </p>
+                </div>
+            </div>
+
+        </section>
+    
+    
+    
+    <!-- Main Section (Apartments & Villas) -->
+    <section class="container mx-auto mt-8 bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold text-gray-800">Apartments, Villas and more in Central Delhi</h2>
+        <!-- Example of user-specific card -->
+        <div class="mt-6 bg-gray-100 p-4 rounded-lg">
+            <div class="flex items-center space-x-4">
+                <div class="rounded-full bg-gray-300 w-12 h-12 text-center flex items-center justify-center text-lg">R</div>
+                <div>
+                    <p class="font-bold">Ramshad</p>
+                    <p class="text-gray-500">Dealer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section></section>
+        <section class="wrapper mb-[8%] mt-[3%]">
+            <h6 class="text-[13px] text-gray-500">Best Projects of the Year</h6>
+            <h2 class="text-[40px] font-semibold mb-[16px]">Top features</h2>
+            <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+              
+              <!-- First Project -->
+              <div class="project-card opacity-0 shadow-lg transform transition duration-500 col-span-1">
+                <a href="http://127.0.0.1:5501/apartments.html">
+                  <img src="./image/apartment2.jpg" alt="Commercial Building" class="w-full h-[250px] object-cover mb-[12px]">
+                </a>
+                <h3 class="font-semibold text-[18px] pl-[8px]">Commercial Building</h3>
+                <p class="mt-[10px] pl-[8px] text-gray-500">Lorem ipsum dolor sit amet consectetur. Adipiscing imperdiet bibendum.</p>
+              </div>
+          
+              <!-- Second Project -->
+              <div class="project-card opacity-0 shadow-lg transform transition duration-500 col-span-1">
+                <a href="http://127.0.0.1:5501/commercial.html">
+                  <img src="./image/mbr-52.jpg" alt="Sobha Heartland II Villas" class="w-full h-[250px] object-cover mb-[12px]">
+                </a>
+                <h3 class="font-semibold text-[18px] pl-[8px]">Sobha Heartland II Villas</h3>
+                <p class="mt-[10px] pl-[8px] text-gray-500">Lorem ipsum dolor sit amet consectetur. Adipiscing imperdiet bibendum.</p>
+              </div>
+          
+              <!-- Third Project -->
+              <div class="project-card opacity-0 shadow-lg transform transition duration-500 col-span-1">
+                <img src="./image/building.png" alt="Sobha Heartland II Villas" class="w-full h-[250px] object-cover mb-[12px]">
+                <h3 class="font-semibold text-[18px] pl-[8px]">Sobha Heartland II Villas</h3>
+                <p class="mt-[10px] pl-[8px] text-gray-500">Lorem ipsum dolor sit amet consectetur. Adipiscing imperdiet bibendum.</p>
+              </div>
+          
+            </div>
+          </section>
+          
+          <script>
+            // JavaScript for Scroll Animation using IntersectionObserver
+            const projectCards = document.querySelectorAll('.project-card');
+          
+            const observerOptions = {
+              threshold: 0.1,  // When 10% of the element is in view
+            };
+          
+            const observer = new IntersectionObserver((entries, observer) => {
+              entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('animate-scrollIn');
+                  observer.unobserve(entry.target);  // Stop observing once animated
+                }
+              });
+            }, observerOptions);
+          
+            projectCards.forEach(card => {
+              observer.observe(card);
+            });
+          </script>
+          
+          <style>
+            /* Animation Styles */
+            @keyframes scrollIn {
+              from { opacity: 0; transform: translateY(50px); }
+              to { opacity: 1; transform: translateY(0); }
+            }
+          
+            .animate-scrollIn {
+              animation: scrollIn 0.8s ease-out forwards;
+            }
+          </style>
+          
+    </section>
+
+    <section>
+      <section class="wrapper mb-[10%]">
+          <h1 class=" text-[16px] sm:text-[px] md:text-[25px] lg:text-[50px] text-center font-bold  mb-[8%] w-[100%] lg:w-[60%]  mx-auto">
+              We are a global, boutique real  estate brokerage
+          </h1>
+          <div class="flex flex-col lg:flex-row justify-between ">
+              <div class="lg:w-[48%] w-[100%] ">
+               
+                <h2 class=" text-[12px] md:text-[216px] lg:text-[16px] font-semibold mb-[2%]"> SELL OR RENT YOUR PROPERTY</h2>
+                  <h2 class=" text-[12px] md:text-[20px] lg:text-[40px] font-semibold mb-[2%]">Register to post your <br> property for FREE</h2>
+                  <p class=" text-[10px] lg:text-[18px] lg:w-[85%]  text-grey-50">
+                    Post your residential / commercial property
+                  </p>
+                      <div class="mt-[8%] ">
+                          <button type="submit" class="py-[14px] px-[30px] bg-[#1F1F1F] rounded-[40px]  text-white mr-[18px]">Get a Quote </button>
+                          <button type="submit" class="py-[14px] px-[30px] bg-gray-400  rounded-[40px]  text-black border-inherit">Get a Quote</button>
+                          <ul class="flex mt-[40px] mb-[40px] lg:mb-0">
+                              <li class="mr-[10%]">
+                                  <h3 id="customers" class="font-black text-[34px]">200+</h3>
+                                  <h4 class="text-[14px]">Property Listings</h4>
+                              </li>
+                          
+                              <li class="mr-[10%]">
+                                  <h3 id="offices" class="font-black text-[34px]">1000+</h3>
+                                  <h4 class="text-[14px]">Monthly Searches</h4>
+                              </li>
+                          
+                              <li class="mr-[10%]">
+                                  <h3 id="students" class="font-black text-[34px]">999+</h3>
+                                  <h4 class="text-[14px]">Owners advertise <br> monthly</h4>
+                              </li>
+                          </ul>
+                          
+                      </div>
+                      
+              <div class="w-[50%]">
+                <h1 class="bg-[#0078DB] py-[4%]  text-[18px] text-center text-white rounded font-bold">Post your property for FREE</h1>
+              </div>
+                  
+              </div>
+
+              <div class="w-[100%] lg:w-[48%] ">
+                  <img src="./image/Group 20.png" alt="" class="w-full h-[350px]">
+              </div>
+
+
+          </div>
+      </section>
+  </section>
+
+  <div class="bg-blue-50 py-8 px-4">
+    <div class="max-w-7xl mx-auto">
+      <!-- Section Title -->
+      <div class="text-center mb-8">
+        <h2 class="text-2xl font-semibold text-blue-900">Newly Launched Projects</h2>
+        <p class="text-gray-500">Limited launch offers available</p>
+      </div>
+  
+      <!-- Cards Container -->
+      <div class="flex space-x-4 overflow-x-scroll no-scrollbar">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-lg shadow-md w-80 flex-shrink-0">
+          <div class="p-4">
+            <div class="flex justify-between items-center mb-2">
+              <span class="bg-yellow-400 text-yellow-900 text-xs px-2 py-1 rounded">NEW LAUNCH</span>
+              <span class="text-xs text-blue-700 font-semibold">RERA</span>
+            </div>
+            <img src="./image/apartment2.jpg" alt="project image" class="rounded-lg mb-4">
+            <h3 class="text-lg font-semibold">Trifecta Vanto</h3>
+            <p class="text-gray-600 text-sm">Sarjapur Road, Bangalore East</p>
+            <p class="text-lg font-semibold text-blue-900">₹ 1.02 - 1.34 Cr</p>
+            <p class="text-sm text-gray-600">2, 3 BHK Apartments</p>
+            <p class="text-sm text-green-600 font-semibold">10.9% price increase in last 3 months</p>
+          </div>
+          <div class="p-4 bg-blue-50 flex justify-between items-center">
+            <span class="text-sm text-gray-500">@zero brokerage</span>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded-lg">View Number</button>
+          </div>
+        </div>
+  
+        <!-- Card 2 -->
+        <div class="bg-white rounded-lg shadow-md w-80 flex-shrink-0">
+          <div class="p-4">
+            <div class="flex justify-between items-center mb-2">
+              <span class="bg-yellow-400 text-yellow-900 text-xs px-2 py-1 rounded">NEW LAUNCH</span>
+              <span class="text-xs text-blue-700 font-semibold">RERA</span>
+            </div>
+            <img src="./image/apartment3.jpg" alt="project image" class="rounded-lg mb-4">
+            <h3 class="text-lg font-semibold">Sun Siri Green Delight</h3>
+            <p class="text-gray-600 text-sm">Kankipadu, Vijayawada</p>
+            <p class="text-lg font-semibold text-blue-900">₹ 23.38 - 69.16 L</p>
+            <p class="text-sm text-green-600 font-semibold">19.2% price increase in last 3 months</p>
+          </div>
+          <div class="p-4 bg-blue-50 flex justify-between items-center">
+            <span class="text-sm text-gray-500">@zero brokerage</span>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded-lg">View Number</button>
+          </div>
+        </div>
+  
+        <!-- Card 3 -->
+        <div class="bg-white rounded-lg shadow-md w-80 flex-shrink-0">
+          <div class="p-4">
+            <div class="flex justify-between items-center mb-2">
+              <span class="bg-yellow-400 text-yellow-900 text-xs px-2 py-1 rounded">NEW LAUNCH</span>
+              <span class="text-xs text-blue-700 font-semibold">RERA</span>
+            </div>
+            <img src="./image/apartment4.jpg" alt="project image" class="rounded-lg mb-4">
+            <h3 class="text-lg font-semibold">Raamah Ellemen</h3>
+            <p class="text-gray-600 text-sm">Sevasi, Vadodara</p>
+            <p class="text-lg font-semibold text-blue-900">₹ 1.94 - 4.45 Cr</p>
+            <p class="text-sm text-green-600 font-semibold">25.9% price increase in last 3 months</p>
+          </div>
+          <div class="p-4 bg-blue-50 flex justify-between items-center">
+            <span class="text-sm text-gray-500">@zero brokerage</span>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded-lg">View Number</button>
+          </div>
+        </div>
+  
+        <!-- Card 4 -->
+        <div class="bg-white rounded-lg shadow-md w-80 flex-shrink-0">
+          <div class="p-4">
+            <div class="flex justify-between items-center mb-2">
+              <span class="bg-yellow-400 text-yellow-900 text-xs px-2 py-1 rounded">NEW LAUNCH</span>
+              <span class="text-xs text-blue-700 font-semibold">RERA</span>
+            </div>
+            <img src="./image/apartment5.jpg" alt="project image" class="rounded-lg mb-4">
+            <h3 class="text-lg font-semibold">Green Hills Residency</h3>
+            <p class="text-gray-600 text-sm">New Alipore, Kolkata</p>
+            <p class="text-lg font-semibold text-blue-900">₹ 75.00 L - 1.20 Cr</p>
+            <p class="text-sm text-green-600 font-semibold">12.5% price increase in last 3 months</p>
+          </div>
+          <div class="p-4 bg-blue-50 flex justify-between items-center">
+            <span class="text-sm text-gray-500">@zero brokerage</span>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded-lg">View Number</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <section class="rental collecton">
+    <section class="wrapper">
+      <div class="flex">
+        <div>
+          <img src="./image/three.webp" alt="" class="w-[50% ]">
+        </div>
+        <div>
+          <img src="./image/two.webp" alt="" class="w-[50%]">
+        </div>
+        
+      </div>
+    </section>
+  </section>
+  
+
+  <div class="bg-white py-8">
+  <div class="text-center mb-6">
+    <h3 class="text-gray-500 uppercase font-bold tracking-wide">Top Cities</h3>
+    <h2 class="text-3xl text-blue-900 font-bold">Explore Real Estate in Popular Indian Cities</h2>
+  </div>
+  
+  <!-- Cities Grid -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 px-4">
+    <!-- City 1: Delhi / NCR -->
+    <div class="bg-white rounded-lg shadow-lg">
+      <img src="./image/delhi.jpg" alt="Delhi / NCR" class="w-full h-40 object-cover rounded-t-lg">
+      <div class="p-4 text-center">
+        <p class="text-blue-900 font-semibold">Delhi / NCR</p>
+        <p class="text-gray-500 text-sm">170,000+ Properties</p>
+      </div>
+    </div>
+
+    <!-- City 2: Bangalore -->
+    <div class="bg-white rounded-lg shadow-lg">
+      <img src="./image/banglore.jpg" alt="Bangalore" class="w-full h-40 object-cover rounded-t-lg">
+      <div class="p-4 text-center">
+        <p class="text-blue-900 font-semibold">Bangalore</p>
+        <p class="text-gray-500 text-sm">42,000+ Properties</p>
+      </div>
+    </div>
+
+    <!-- City 3: Mumbai -->
+    <div class="bg-white rounded-lg shadow-lg">
+      <img src="./image/mumbai.jpg" alt="Mumbai" class="w-full h-40 object-cover rounded-t-lg">
+      <div class="p-4 text-center">
+        <p class="text-blue-900 font-semibold">Mumbai</p>
+        <p class="text-gray-500 text-sm">40,000+ Properties</p>
+      </div>
+    </div>
+
+    <!-- City 4: Pune -->
+    <div class="bg-white rounded-lg shadow-lg">
+      <img src="image/pune.jpg" alt="Pune" class="w-full h-40 object-cover rounded-t-lg">
+      <div class="p-4 text-center">
+        <p class="text-blue-900 font-semibold">Pune</p>
+        <p class="text-gray-500 text-sm">42,000+ Properties</p>
+      </div>
+    </div>
+
+    <!-- City 5: Hyderabad -->
+    <div class="bg-white rounded-lg shadow-lg">
+      <img src="./image/hydrabad.jpg">
+      <div class="p-4 text-center">
+        <p class="text-blue-900 font-semibold">Hyderabad</p>
+        <p class="text-gray-500 text-sm">22,000+ Properties</p>
+      </div>
+    </div>
+
+    <!-- City 6: Kolkata -->
+    <div class="bg-white rounded-lg shadow-lg">
+      <img src="./image/kolkatta.jpg">
+      <div class="p-4 text-center">
+        <p class="text-blue-900 font-semibold">Kolkata</p>
+        <p class="text-gray-500 text-sm">25,000+ Properties</p>
+      </div>
+    </div>
+
+    <!-- City 7: Chennai -->
+    <div class="bg-white rounded-lg shadow-lg">
+      <img src="./image/chennai.jpg">
+      <div class="p-4 text-center">
+        <p class="text-blue-900 font-semibold">Chennai</p>
+        <p class="text-gray-500 text-sm">30,000+ Properties</p>
+      </div>
+    </div>
+
+    <!-- City 8: Ahmedabad -->
+    <div class="bg-white rounded-lg shadow-lg">
+      <img src="./image/a">
+      <div class="p-4 text-center">
+        <p class="text-blue-900 font-semibold">Ahmedabad</p>
+        <p class="text-gray-500 text-sm">19,000+ Properties</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+  <section class="mt-[40px] containerx lg:mx-auto mx-[5%] rounded-[20px] ">
+    <section class=" flex flex-col  lg:flex-row lg:justify-between items-center ">
+        <div class=" w-full lg:w-[40%] lg:pl-[30px]">
+            <h1 class="text-[20px] mb-[2%] pt-[8%] md:text-[20px] lg:text-[40px] font-semi leading-tight ">Subscribe Our Newsletter</h1>
+            <p class=" text-[12px] lg:mt-[20px] mb-[30px]"> 
+                ipsum dolor sit amet consectetur. Feugiat ut aliquet sit pellentesque 
+                sollicitudin. Egestas faucibus lacus diam in senectus consectetur.
+                Mattis elit adipiscing quisque tellus scelerisque vehicula ante nunc.</p>
+                <form action="" class="mb-10 ">
+                    <div class="  flex lg:justify-between relative">
+                        <input type="text" placeholder="Enter Your Email" class="outline-none w-full lg:w-[70%] h-[50px] p text-black rounded-[40px] py-[18px] pl-[24px] relative">
+                        <button type="submit" class="py-[14px] px-[30px] bg-[#1F1F1F] rounded-[40px] absolute right-0 lg:right-[100px] text-white">Get a Quote</button>
+                    </div>
+                </form>
+        </div>
+
+        <div class=" w-full lg:w-[55%]">
+          <img src="./image/3d-rendering-isometric-fdgdf 1.png" alt="" class=" right-0 h-[400px] w-[650px] lg:w-full relative top-[30px] lg:right-[-50px] lg:h-[500px]">
+
+        </div>
+
+    </section>    
+</section>
+
+</body>
+</html>
